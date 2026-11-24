@@ -1,0 +1,2 @@
+from vision3d.datasets.segmentation.s3dis import S3DISBlockWiseTestingDataset, S3DISBlockWiseTrainingDataset
+from vision3d.datasets.segmentation.shapenetpart import ShapeNetPartDataset

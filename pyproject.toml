@@ -1,0 +1,50 @@
+[build-system]
+requires = [
+  "setuptools",
+  "wheel",
+  "torch>=2.7.0",
+  "numpy>=2.0.1",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vision3d"
+version = "2.1.0"
+authors = [
+  {name = "qinzheng93"}
+]
+description = "Vision3D is a 3D vision library built with PyTorch to implement state-of-the-art deep 3DV models."
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+  "torch>=2.7.0",
+  "numpy>=2.0.1",
+  "scipy>=1.15.3",
+  "matplotlib",
+  "h5py",
+  "scikit-learn",
+  "scikit-image",
+  "tqdm",
+  "opencv-python",
+  "open3d",
+  "loguru",
+  "ipdb",
+  "pykeops",
+  "torch-scatter",
+  "einops",
+  "omegaconf",
+  "swanlab",
+]
+
+[project.urls]
+Homepage = "https://github.com/qinzheng93/vision3d"
+
+[tool.setuptools]
+py-modules = ["vision3d"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint.isort]
+known-first-party = ["vision3d"]
